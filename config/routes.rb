@@ -1,11 +1,5 @@
 Ipsum::Application.routes.draw do
-  get "words/index"
-  get "words/show"
-  get "words/new"
-  get "words/create"
-  get "words/edit"
-  get "words/update"
-  get "words/destroy"
+  resources :words
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
