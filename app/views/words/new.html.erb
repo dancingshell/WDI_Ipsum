@@ -1,7 +1,6 @@
-<h1>Words#new</h1>
-<p>Find me in app/views/words/new.html.erb</p>
 
-<%= form_for @word do |f| %>
-  <%= f.text_field :word, placeholder: "Add your own word or phrase!" %>
-  <%= f.submit %>
+<%= form_for @word, :html => {class: "form-group"} do |f| %>
+    <h1> <%= f.label :word %><br></h1>
+    <%= f.text_field :word, class: "form-control", placeholder: "Add a new word right here!" %><br>
+    <%= f.submit %>
 <% end %>

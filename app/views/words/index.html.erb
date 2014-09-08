@@ -1,2 +1,6 @@
-<h1>Words#index</h1>
-<p>Find me in app/views/words/index.html.erb</p>
+<h1> Here are all the current words </h1>
+
+<ul><% @words.each do |w| %>
+      <li><%= w.word %></li>
+    <% end %>
+</ul>

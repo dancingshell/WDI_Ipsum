@@ -7,7 +7,7 @@ Ipsum::Application.routes.draw do
   get "ipsum_requests/destroy"
 
   resources :ipsum_requests
-
+  resources :words
   root 'ipsum_requests#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,6 +1,5 @@
-<%= form_for @ipsum_request do |f| %>
-  <%= f.label :paragraphs %>
-  <%= f.text_field :paragraphs %>
-  
-  <%= f.submit %>
+<%= form_for @ipsum_request, :html => {class: "form-group"} do |f| %>
+    <h1> <%= f.label :paragraphs %><br></h1>
+    <%= f.text_field :paragraphs, class: "form-control", placeholder: "Please pick a Username" %><br>
+    <%= f.submit %>
  <% end %>
